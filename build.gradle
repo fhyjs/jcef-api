@@ -33,16 +33,15 @@ publishing {
             from components.java
             groupId = 'org.eu.hanana.reimu.lib'   // GitHub 用户名或组织名
             artifactId = 'jcef-api'
-            version = '1.0.0'              // 你要发布的版本
+            version = '1.0.1'              // 你要发布的版本
         }
     }
     repositories {
         maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/fhyjs/jcef-api")
+            url 'https://maven.hanana2.link:2053/releases'
             credentials {
-                username = project.findProperty("gitUsername") ?: System.getenv("GITHUB_USERNAME")
-                password = project.findProperty("gitTOKEN") ?: System.getenv("GITHUB_TOKEN")
+                username lcUsername
+                password lcPassword
             }
         }
     }

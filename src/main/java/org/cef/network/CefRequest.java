@@ -321,8 +321,7 @@ public abstract class CefRequest {
         REFERRER_POLICY_NUM_VALUES
     }
 
-    // This CTOR can't be called directly. Call method create() instead.
-    CefRequest() {}
+    public CefRequest() {}
 
     @Override
     protected void finalize() throws Throwable {

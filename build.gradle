@@ -33,7 +33,7 @@ publishing {
             from components.java
             groupId = 'org.eu.hanana.reimu.lib'   // GitHub 用户名或组织名
             artifactId = 'jcef-api'
-            version = '1.0.1'              // 你要发布的版本
+            version = '1.0.2'              // 你要发布的版本
         }
     }
     repositories {
